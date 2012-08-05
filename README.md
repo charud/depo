@@ -1,6 +1,6 @@
 Depo
 ====
-A shellscript for deploying node.js applications to a remote server using ssh, git and virtualhosts. When doing updates with this script the server copy of the repository will be reset to HEAD.
+A shellscript for deploying node.js applications to a remote server using ssh, git and virtualhosts.
 
 Sample usage
 ------------
@@ -117,7 +117,7 @@ Usage
 - __depo update__ [nameOfVirtualHost]  
   Update the repository for the selected virtualhost on the server. (Reset to HEAD) 
   This will remove possible local modifications in the server repository, it is not a merge.
-
+  
 	```bash
 	$ depo update beta.example.org
 	```
