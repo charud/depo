@@ -1,6 +1,6 @@
 Depo
 ====
-A shellscript for deploying node.js applications to a remote server using ssh, git and virtualhosts.
+A shell script for deploying node.js applications to a remote server using ssh, git and virtualhosts.
 
 Sample usage
 ------------
@@ -73,8 +73,8 @@ Then open depo.sh in your favorite editor and configure the variables
 For easier access when you are working on your projects, copy it to /usr/bin without the .sh extension and mark it as executable 
 
 ```bash
-$ sudo cp depo.sh /usr/bin/depo
-$ sudo chmod +x /usr/bin/depo
+$ sudo cp depo.sh /usr/local/bin/depo
+$ sudo chmod +x /usr/local/bin/depo
 ```
 
 Requirements
