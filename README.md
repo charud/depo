@@ -2,7 +2,8 @@ Depo
 ====
 A shellscript for deploying node.js applications to a remote server using ssh, git and virtualhosts. When doing updates with this script the server copy of the repository will be reset to HEAD.
 
-#### Sample usage
+Sample usage
+------------
 
 Forward port 80 to port 8080 by running: (DepoProxy is listening to port 8080)
 ```bash
