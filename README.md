@@ -4,7 +4,7 @@ A shellscript for deploying node.js applications to a remote server using ssh, g
 
 #### Sample usage
 
-Forward port 80 to port 8080 by running (DepoProxy is listening to port 8080)
+Forward port 80 to port 8080 by running: (DepoProxy is listening to port 8080)
 ```bash
 sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
 ```
