@@ -9,7 +9,7 @@ On your client(s) (depo.sh)
 Place the script depo.sh on the client from where you would like to manage the deployments
 depo.sh has the following options:
 
-- Create a new virtualhost setting and checkouts the repository using GIT
+- Setup a new virtualhost and checkout the specified repository using git
 	
 		$ depo create [nameOfVirtualHost] [repository] [optional branch]    
 
