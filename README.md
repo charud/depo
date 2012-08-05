@@ -32,6 +32,25 @@ $ sudo cp depo.sh /usr/bin/depo
 $ sudo chmod +x /usr/bin/depo
 ```
 
+Your Node.js Application(s)
+===========================
+For DepoProxy to work with your current Node.js Express applications
+you need to export the app to the proxy. 
+
+```js
+exports.app = app
+``` 
+
+And if you want to be able to run it as a standalone application you can check for the existence of DepoProxy by checking the ``module.parent``
+
+```js
+if (module.parent) {
+	exports.app = app;
+} else {
+	app.listen(80);
+}
+```
+
 Usage
 -----
 - __depo create__ [nameOfVirtualHost] [repository] [optional branch]  
