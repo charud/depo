@@ -41,7 +41,7 @@ you need to export the app to the proxy.
 exports.app = app
 ``` 
 
-And if you want to be able to run it as a standalone application you can check for the existence of DepoProxy by checking the ``module.parent``
+And if you want to be able to run it as a standalone application as well you can check for the existence of DepoProxy by checking the ``module.parent``
 
 ```js
 if (module.parent) {
