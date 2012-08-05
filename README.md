@@ -75,8 +75,17 @@ $ sudo cp depo.sh /usr/bin/depo
 $ sudo chmod +x /usr/bin/depo
 ```
 
-Your node.js applications
--------------------------
+Requirements
+------------
+
+depo.sh will launch DepoProxy using forever (https://github.com/nodejitsu/forever/). Install forever on your server using 
+
+```bash
+$ npm install forever -g
+```
+
+It's not necessary to use forever, you can modify depo.sh to use `node` or something else if you'd like. 
+
 For DepoProxy to work with your current Node.js Express applications
 you need to export the app to the proxy. 
 
