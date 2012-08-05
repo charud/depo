@@ -30,8 +30,6 @@ For easier access when you are working on your projects, copy it to /usr/bin wit
 
 Usage
 -----
-depo.sh has the following options:
-
 - __depo create__ [nameOfVirtualHost] [repository] [optional branch]  
   Setup a new virtualhost and checkout the specified repository using git
 	
