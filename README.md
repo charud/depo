@@ -2,6 +2,39 @@ Depo
 ====
 A shellscript for deploying node.js applications to a remote server using ssh, git and virtualhosts. When doing updates with this script the server copy of the repository will be reset to HEAD.
 
+#### Sample usage
+
+Forward port 80 to port 8080 by running (DepoProxy is listening to port 8080)
+```bash
+sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+```
+
+Create a virtualhost for the ``example`` repository (branch beta) by running:
+```bash
+$ depo create beta.example.org https://github.com/john-doe/example beta    
+```
+A node server will now be running (``using forever``) and ``beta.example.org`` will be accessible.
+
+Make some modifications, push them to the remote branch, and update the server using:
+
+```bash
+$ depo update beta.example.org    
+```
+
+Create another site
+
+```bash
+$ depo create www.example.org https://github.com/john-doe/example
+```
+
+The master branch will now be accessible from www.example.org. beta.example.org will still point to the beta branch. Then run
+
+```bash
+$ depo list
+```
+
+To see all the virtual hosts and repositories that are active on the server
+
 Installation
 ------------
 #### On your server
