@@ -13,7 +13,7 @@
 #
 # Show a list of all virtual hosts, folders, associated git repository urls and current branches
 # on the remote server. 
-# 	  $ depo list
+#     $ depo list
 #
 # Restart the proxy server (using forever). Will start it if not already running.
 #     $ depo restart
