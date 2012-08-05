@@ -5,8 +5,6 @@ A shellscript for deploying node.js applications on a remote server using ssh, g
 
 Installation
 ------------
-On your client(s) (depo.sh)
-
 #### On your server
 
 Put the folder ``DepoProxy`` somewhere on your server, enter the folder and run ``npm install`` to install its dependencies (currently express). Make sure that your SSH user can access this folder. You also need to install ``forever`` from https://github.com/nodejitsu/forever/
@@ -35,7 +33,6 @@ For easier access when you are working on your projects, copy it to /usr/bin wit
 
 Usage
 -----
-
 depo.sh has the following options:
 
 - Setup a new virtualhost and checkout the specified repository using git
