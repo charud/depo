@@ -88,8 +88,7 @@ Virtual hosts that depo.sh generates looks something like this:
 app.use(express.vhost('beta.example.org', require('/home/cr/beta.example.org').app));
 ```
 
-You may modify server.js as you see fit, but be sure to leave no newlines at the end of the file.
-
+You may modify server.js as you see fit, but be sure to end it with app.listen() and make sure that there are no empty newlines after it.
   
 
 Author  
