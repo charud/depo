@@ -65,18 +65,17 @@ When running the ``list`` command it will return the virtual hosts defined in ``
 
 #### Virtualhosts with DepoProxy
 
-When adding new virtual hosts using ``depo create`` depo.sh will connect to your server using SSH and re-generate its server.js
+When adding new virtual hosts using ``depo create`` depo.sh will connect to your server and re-generate the ``server.js`` at ``__REMOTE\_PATH\_TO\_PROXY\_SERVER__``. When a new virtualhost is added it will: 
 
-When a new virtualhost is added it will: 
-1. Remove the last line of server.js (app.listen()), 
-2. Append a new app.use() statement
-3. Append app.listen() again *
+ 1. Remove the last line of server.js (app.listen()), 
+ 2. Append a new app.use() statement
+ 3. Append app.listen() again *
 
 Virtual hosts that depo.sh generates looks something like this:
+
 	app.use(express.vhost('beta.example.org', require('/home/cr/beta.example.org').app));
 
-You may modify server.js on your own risk, but be 
-sure to leave no newlines on the end of the file.
+You may modify server.js as you see fit, but be sure to leave no newlines at the end of the file.
 
 
 Author: Charlie Rudenstål <charlie4@gmail.com>
