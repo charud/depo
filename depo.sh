@@ -33,7 +33,7 @@ REMOTE_PATH_TO_PROXY_SERVER=/home/DepoProxy/
 # Remote path to public html
 # Will create folders for each site in here and look for server.js or other start point defined in package.json
 # Must end with /
-REMOTE_PATH_TO_PUBLIC_HTML=/home/public_html
+REMOTE_PATH_TO_PUBLIC_HTML=/home/public_html/
 
 
 if [ $# -lt 1 ]; then
@@ -79,7 +79,7 @@ case $1 in
 		echo 
  		cd $REMOTE_PATH_TO_PROXY_SERVER
 		sed -e '\$d' server.js > server.tmp.js
-		echo 'app.use(express.vhost('\''$PARAM_VIRTUALHOST_NAME'\'', require('\''$REMOTE_PATH_TO_PUBLIC_HTML$PARAM_VIRTUALHOST_NAME'\''), app));' >> server.tmp.js
+		echo 'app.use(express.vhost('\''$PARAM_VIRTUALHOST_NAME'\'', require('\''$REMOTE_PATH_TO_PUBLIC_HTML$PARAM_VIRTUALHOST_NAME'\'').app));' >> server.tmp.js
 		cp server.tmp.js server.js
 		rm server.tmp.js
 		echo 'app.listen(8080);' >> server.js
