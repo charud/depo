@@ -9,21 +9,14 @@ On your client(s) (depo.sh)
 
 #### On your server
 
-Put the folder ``DepoProxy`` somewhere on your server, enter it, and the run
-
-	$ npm install
-
-to install its dependencies (currently express).
-Make sure that your SSH user can access this folder.
-
-You will also need to install forever from https://github.com/nodejitsu/forever/
+Put the folder ``DepoProxy`` somewhere on your server, enter the folder and run ``npm install`` to install its dependencies (currently express). Make sure that your SSH user can access this folder. You also need to install ``forever`` from https://github.com/nodejitsu/forever/
 
 #### On your client
 
 Place depo.sh on a client from where you would like to manage the deployments:
 
-	wget https://raw.github.com/charlie-rudenstal/depo/master/depo.sh
-	chmod +x depo.sh
+	$ wget https://raw.github.com/charlie-rudenstal/depo/master/depo.sh
+	$ chmod +x depo.sh
 
 Then open depo.sh in your favorite editor and configure the variables
 * __REMOTE\_HOST__
@@ -35,8 +28,7 @@ Then open depo.sh in your favorite editor and configure the variables
 * __REMOTE\_PATH\_TO\_PUBLIC\_HTML__
   Folderes for each site will be created in here. DepoProxy and look for a start script such as server.js.
 
-For easier access when you are working on your projects:
-Copy it to /usr/bin without the .sh extension and mark it as executable 
+For easier access when you are working on your projects, copy it to /usr/bin without the .sh extension and mark it as executable 
 	
 	$ cp depo.sh /usr/bin/depo
 	$ chmod +x /usr/bin/depo
