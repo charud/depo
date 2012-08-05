@@ -37,7 +37,7 @@ REMOTE_PATH_TO_PUBLIC_HTML=/home/public_html
 
 
 if [ $# -lt 1 ]; then
-	echo "Usage: depo {create|update|restart}"
+	echo "Usage: depo {create|update|list|restart}"
 	exit 2;
 fi
 
@@ -187,5 +187,5 @@ EOI
 	;;
 
 *)
-	echo "Usage: depo {create|update|restart}"
+	echo "Usage: depo {create|update|list|restart}"
 esac
