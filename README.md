@@ -7,7 +7,7 @@ Sample usage
 
 Connect to your server and forward port 80 to port 8080 by running: (DepoProxy is listening to port 8080)
 ```bash
-sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+$ sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
 ```
 
 Go back to your client where depo.sh is installed.   
