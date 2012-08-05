@@ -1,6 +1,6 @@
 Depo
 ====
-A shellscript for deploying node.js applications on a remote server using ssh, git and virtualhosts. When doing updates with this script the server copy of the repository will be reset to HEAD.
+A shellscript for deploying node.js applications to a remote server using ssh, git and virtualhosts. When doing updates with this script the server copy of the repository will be reset to HEAD.
 
 Installation
 ------------
