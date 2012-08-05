@@ -23,7 +23,7 @@
 # =============
 # Remote Host
 # Change to your remote server host (will connect using SSH)
-REMOTE_HOST=johndoe@example.org 
+REMOTE_HOST=johndoe@example.org
 
 # Remote path proxy server
 # Will look for server.js (and create a server.js.tmp during the process)
