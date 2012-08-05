@@ -1,6 +1,7 @@
 #!/bin/sh
 # @name Depo
-# @description A shellscript for deploying node.js applications on a remote server using git and virtualhosts
+# @description A shellscript for deploying node.js applications to a remote server using ssh, git and virtualhosts
+# @repository https://github.com/charlie-rudenstal/depo
 # @author Charlie Rudenstål <charlie4@gmail.com>
 #
 # Place this script on the client
