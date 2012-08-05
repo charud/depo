@@ -15,13 +15,16 @@ Place depo.sh on a client from where you would like to manage the deployments:
 
 Then open depo.sh in your favorite editor and configure the variables
 * __REMOTE\_HOST__
+  
   Change to your remote server host (will connect using SSH)
 
 * __REMOTE\_PATH\_TO\_PROXY\_SERVER__
+  
   Will look for server.js (and create a server.js.tmp during the process). Must end with /
 
 * __REMOTE\_PATH\_TO\_PUBLIC\_HTML__
-  Folderes for each site will be created in here. DepoProxy and look for a start script such as server.js.
+
+  Folders for each site will be created at this path. DepoProxy and look for a start script such as server.js.
 
 For easier access when you are working on your projects, copy it to /usr/bin without the .sh extension and mark it as executable 
 	
