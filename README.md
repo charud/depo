@@ -73,7 +73,9 @@ When adding new virtual hosts using ``depo create`` depo.sh will connect to your
 
 Virtual hosts that depo.sh generates looks something like this:
 
+```js
 	app.use(express.vhost('beta.example.org', require('/home/cr/beta.example.org').app));
+```
 
 You may modify server.js as you see fit, but be sure to leave no newlines at the end of the file.
 
