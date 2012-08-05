@@ -6,7 +6,7 @@
 #
 # Place this script on the client
 #
-# Creates a new virtualhost setting and checkouts the repository using GIT
+# Creates a new virtualhost setting and checkouts the repository using git
 #     $ depo create [nameOfVirtualHost] [repository] [optional branch]    
 #
 # Updates the git repository to HEAD (Will remove all local modifications, this is not a merge)
