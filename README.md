@@ -67,9 +67,9 @@ When running the ``list`` command it will return the virtual hosts defined in ``
 
 When adding new virtual hosts using ``depo create`` depo.sh will connect to your server and re-generate the ``server.js`` at ``__REMOTE\_PATH\_TO\_PROXY\_SERVER__``. When a new virtualhost is added it will: 
 
- 1. Remove the last line of server.js (app.listen()), 
- 2. Append a new app.use() statement
- 3. Append app.listen() again *
+ 1.  Remove the last line of server.js (app.listen()), 
+ 2.  Append a new app.use() statement
+ 3.  Append app.listen() again *
 
 Virtual hosts that depo.sh generates looks something like this:
 
