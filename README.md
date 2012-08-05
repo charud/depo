@@ -1,16 +1,13 @@
 Depo
 ====
-
 A shellscript for deploying node.js applications on a remote server using ssh, git and virtualhosts. When doing updates with this script the server copy of the repository will be reset to HEAD.
 
 Installation
 ------------
 #### On your server
-
 Put the folder ``DepoProxy`` somewhere on your server, enter the folder and run ``npm install`` to install its dependencies (currently express). Make sure that your SSH user can access this folder. You also need to install ``forever`` from https://github.com/nodejitsu/forever/
 
 #### On your client
-
 Place depo.sh on a client from where you would like to manage the deployments:
 
 	$ wget https://raw.github.com/charlie-rudenstal/depo/master/depo.sh
