@@ -1,7 +1,7 @@
 Depo
 ====
 
-A shellscript for deploying node.js applications on a remote server using ssh, git and virtualhosts
+A shellscript for deploying node.js applications on a remote server using ssh, git and virtualhosts. When doing updates with this script the server copy of the repository will be reset to HEAD.
 
 On your client(s) (depo.sh)
 --------------------------
@@ -13,8 +13,9 @@ depo.sh has the following options:
 	
 		$ depo create [nameOfVirtualHost] [repository] [optional branch]    
 
-- Updates the git repository to HEAD (Will remove all local modifications, this is not a merge)
-	
+- Update the repository for the selected virtualhost on the server. (Rest to HEAD) 
+  This will remove local modifications on the server repository, it is not a merge.
+  	
 		$ depo update [nameOfVirtualHost]
 
 - Show a list of all virtual hosts, folders, associated git repository urls and current branches on the remote server. 
