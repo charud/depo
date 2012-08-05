@@ -25,7 +25,7 @@ Create another site
 $ depo create www.example.org https://github.com/john-doe/example
 ```
 
-The master branch will now be accessible from ``www.example.org``, while beta.example.org will still point to the beta branch. Then run
+The master branch will now be accessible from ``www.example.org``, while ``beta.example.org`` will still point to the beta branch. Then run
 
 ```bash
 $ depo list
