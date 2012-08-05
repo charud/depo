@@ -32,16 +32,16 @@ Usage
 -----
 depo.sh has the following options:
 
-- __depo create__  
+- __depo create__ [nameOfVirtualHost] [repository] [optional branch]  
   Setup a new virtualhost and checkout the specified repository using git
 	
-		$ depo create [nameOfVirtualHost] [repository] [optional branch]    
+		$ depo create beta.example.org https://github.com/john-doe/example beta    
 
-- __depo update__  
+- __depo update__ [nameOfVirtualHost]  
   Update the repository for the selected virtualhost on the server. (Rest to HEAD) 
   This will remove local modifications on the server repository, it is not a merge.
 
-		$ depo update [nameOfVirtualHost]
+		$ depo update beta.example.org
 
 - __depo list__  
   Show a list of all virtual hosts, folders, associated git repository urls and current branches on the remote server. 
@@ -52,7 +52,6 @@ depo.sh has the following options:
   Restart the proxy server (using forever). Will start it if not already running.
 	
 		$ depo restart
-
 
 
 Generation of DepoProxy
