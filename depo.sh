@@ -50,7 +50,7 @@ case $1 in
 			exit 2;
 		fi
 
-		PARAM_VIRTUALHOST_NAME = $2
+		PARAM_VIRTUALHOST_NAME=$2
 
 		if [ $# -lt 3 ]; then
 			echo "Missing gitRepositoryUrl"
@@ -58,7 +58,7 @@ case $1 in
 			exit 2;
 		fi
 
-		PARAM_GIT_REPOSITORY_URL = $3
+		PARAM_GIT_REPOSITORY_URL=$3
 
 		if [ $# -lt 3 ]; then
 			echo "Creating virtualhost for $PARAM_VIRTUALHOST_NAME using repository $PARAM_GIT_REPOSITORY_URL"
@@ -115,7 +115,7 @@ EOI
 			exit 2;
 		fi
 		
-		PARAM_VIRTUALHOST_NAME = $2
+		PARAM_VIRTUALHOST_NAME=$2
 
 		ssh -T $REMOTE_HOST <<EOI
 

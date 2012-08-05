@@ -25,8 +25,8 @@ Then open depo.sh in your favorite editor and configure the variables
 
 For easier access when you are working on your projects, copy it to /usr/bin without the .sh extension and mark it as executable 
 	
-	$ cp depo.sh /usr/bin/depo
-	$ chmod +x /usr/bin/depo
+	$ sudo cp depo.sh /usr/bin/depo
+	$ sudo chmod +x /usr/bin/depo
 
 Usage
 -----
