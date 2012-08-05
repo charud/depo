@@ -52,8 +52,19 @@ Usage
 		$ depo restart
 
 
-Generation of DepoProxy
+How it works
 -----------------------
+
+#### depo.sh
+
+depo.sh will access your server using SSH. It will modify the file ``server.js`` located at
+the server path you specify for DepoProxy (``__REMOTE\_PATH\_TO\_PROXY\_SERVER__``). It will also create new folders in the path ``_REMOTE\_PATH\_TO\_PUBLIC\_HTML`` and checkout a clone of the
+git repository you supply. 
+
+When running the ``list`` command it will return the virtual hosts defined in ``server.js``, traverse the directory ``_REMOTE\_PATH\_TO\_PUBLIC\_HTML`` and retrieve the current repository url and branch for each directory inside, using git.  
+
+#### Virtualhosts with DepoProxy
+
 When adding new virtual hosts using ``depo create`` depo.sh will connect to your server using SSH and re-generate its server.js
 
 When a new virtualhost is added it will: 
