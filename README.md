@@ -26,13 +26,23 @@ $ depo create www.example.org https://github.com/john-doe/example
 ```
 
 The master branch will now be accessible from ``www.example.org``, while ``beta.example.org`` will still point to the beta branch.  
-Then run
+   
+To see all the virtual hosts and repositories that are active on the server, run:
 
 ```bash
 $ depo list
-```
 
-To see all the virtual hosts and repositories that are active on the server
+	Configured virtual hosts
+	========================
+	app.use(express.vhost('beta.exaple.org', require('/home/johndoe/public_html/beta.example.org').app));
+	app.use(express.vhost('www.example.org', require('/home/johndoe/public_html/www.example.org').app));
+
+	Folders and Git repositories
+	============================
+	                   Folder                      Repo
+	        beta.example.org/ https://github.com/john-doe/example @ beta
+	         www.example.org/ https://github.com/john-doe/example @ master
+```
 
 Installation
 ------------

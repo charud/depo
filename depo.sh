@@ -29,12 +29,12 @@ REMOTE_HOST=johndoe@example.org
 # Remote path proxy server
 # Will look for server.js (and create a server.js.tmp during the process)
 # Must end with /
-REMOTE_PATH_TO_PROXY_SERVER=/home/DepoProxy/
+REMOTE_PATH_TO_PROXY_SERVER=/home/johndoe/DepoProxy/
 
 # Remote path to public html
 # Will create folders for each site in here and look for server.js or other start point defined in package.json
 # Must end with /
-REMOTE_PATH_TO_PUBLIC_HTML=/home/public_html/
+REMOTE_PATH_TO_PUBLIC_HTML=/home/johndoe/public_html/
 
 
 if [ $# -lt 1 ]; then
