@@ -1,0 +1,17 @@
+{
+  "name": "DepoProxy",
+  "version": "1.0.0",
+  "description": "A simple Virtualhost Proxy for Depo",
+  "author": "Charlie Rudenstål <charlie4@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/charlie-rudenstal/Depo.git"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "3.x"
+  }
+}
