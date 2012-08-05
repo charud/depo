@@ -22,8 +22,8 @@
 # Configuration
 # =============
 # Remote Host
-# Change to your remote server host
-REMOTE_HOST=cr@smack.at 
+# Change to your remote server host (will connect using SSH)
+REMOTE_HOST=johndoe@example.org 
 
 # Remote path proxy server
 # Will look for server.js (and create a server.js.tmp during the process)
@@ -33,7 +33,7 @@ REMOTE_PATH_TO_PROXY_SERVER=/home/proxy/
 # Remote path to public html
 # Will create folders for each site in here and look for server.js or other start point defined in package.json
 # Must end with /
-REMOTE_PATH_TO_PUBLIC_HTML=/home/cr/
+REMOTE_PATH_TO_PUBLIC_HTML=/home/public_html
 
 
 if [ $# -lt 1 ]; then
@@ -171,7 +171,7 @@ EOI
 		echo Folders and Git repositories 
 		echo ============================
 		
-		cd /home/cr		
+		cd $REMOTE_PATH_TO_PUBLIC_HTML		
 		printf "%25s %25s\n" Folder Repo
 		for dir in */; do
 			REPO_URL=\`git --git-dir \${dir}.git config --get remote.origin.url 2> /dev/null \`
