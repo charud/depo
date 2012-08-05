@@ -90,6 +90,7 @@ app.use(express.vhost('beta.example.org', require('/home/cr/beta.example.org').a
 
 You may modify server.js as you see fit, but be sure to leave no newlines at the end of the file.
 
+  
 
 Author  
 Charlie Rudenstål  
