@@ -10,10 +10,10 @@ Put the folder ``DepoProxy`` somewhere on your server, enter the folder and run 
 #### On your client
 Place depo.sh on a client from where you would like to manage the deployments:
 
-	```bash
-	$ wget https://raw.github.com/charlie-rudenstal/depo/master/depo.sh
-	$ chmod +x depo.sh
-	```
+```bash
+$ wget https://raw.github.com/charlie-rudenstal/depo/master/depo.sh
+$ chmod +x depo.sh
+```
 
 Then open depo.sh in your favorite editor and configure the variables
 * __REMOTE\_HOST__  
@@ -27,10 +27,10 @@ Then open depo.sh in your favorite editor and configure the variables
 
 For easier access when you are working on your projects, copy it to /usr/bin without the .sh extension and mark it as executable 
 
-	```bash
-	$ sudo cp depo.sh /usr/bin/depo
-	$ sudo chmod +x /usr/bin/depo
-	```
+```bash
+$ sudo cp depo.sh /usr/bin/depo
+$ sudo chmod +x /usr/bin/depo
+```
 
 Usage
 -----
