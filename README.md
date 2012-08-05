@@ -31,7 +31,7 @@ To see all the virtual hosts and repositories that are active on the server, run
 
 ```bash
 $ depo list
-johndoe@example.org\'s password: 
+johndoe@example.orgs password: 
 
 	Configured virtual hosts
 	========================
