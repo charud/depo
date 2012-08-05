@@ -142,23 +142,23 @@ How it works
 #### depo.sh
 
 depo.sh will access your server using SSH. It will modify the file ``server.js`` located at
-the server path you specify for DepoProxy (``__REMOTE\_PATH\_TO\_PROXY\_SERVER__``). It will also create new folders in the path ``_REMOTE\_PATH\_TO\_PUBLIC\_HTML`` and checkout a clone of the
+the server path you specify for DepoProxy (``__REMOTE_PATH_TO_PROXY_SERVER__``). It will also create new folders in the path ``_REMOTE_PATH_TO_PUBLIC_HTML`` and checkout a clone of the
 git repository you supply. 
 
-When running the ``list`` command it will return the virtual hosts defined in ``server.js``, traverse the directory ``_REMOTE\_PATH\_TO\_PUBLIC\_HTML`` and retrieve the current repository url and branch for each directory inside, using git.  
+When running the ``list`` command it will return the virtual hosts defined in ``server.js``, traverse the directory ``_REMOTE_PATH_TO_PUBLIC_HTML`` and retrieve the current repository url and branch for each directory inside, using git.  
 
 #### Virtualhosts with DepoProxy
 
-When adding new virtual hosts using ``depo create`` depo.sh will connect to your server and re-generate the ``server.js`` at ``__REMOTE\_PATH\_TO\_PROXY\_SERVER__``. When a new virtualhost is added it will: 
+When adding new virtual hosts using ``depo create`` ``depo.sh`` will connect to your server and re-generate  ``server.js`` at ``__REMOTE_PATH_TO_PROXY_SERVER__``. When a new virtualhost is added it will: 
 
- 1.  Remove the last line of server.js (app.listen()), 
- 2.  Append a new app.use() statement
- 3.  Append app.listen() again *
+ 1.  Remove the last line of server.js (app.listen(8080)), 
+ 2.  Append a new ``app.use()`` statement with the virtualhost
+ 3.  Append ``app.listen(8080)`` again
 
 Virtual hosts that depo.sh generates looks something like this:
 
 ```js
-app.use(express.vhost('beta.example.org', require('/home/cr/beta.example.org').app));
+app.use(express.vhost('beta.example.org', require('/home/johndoe/public_html/beta.example.org').app));
 ```
 
 You may modify server.js as you see fit, but be sure to end it with app.listen() and make sure that there are no empty newlines after it.
