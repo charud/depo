@@ -5,12 +5,13 @@ A shellscript for deploying node.js applications to a remote server using ssh, g
 Sample usage
 ------------
 
-Forward port 80 to port 8080 by running: (DepoProxy is listening to port 8080)
+Connect to your server and forward port 80 to port 8080 by running: (DepoProxy is listening to port 8080)
 ```bash
 sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
 ```
 
-Create a virtualhost for the ``beta branch`` of the ``example`` repository by running:
+Go to the client where depo.sh is installed.   
+Now create a virtualhost for the ``beta branch`` of the ``example`` repository by running:
 ```bash
 $ depo create beta.example.org https://github.com/john-doe/example beta    
 ```
