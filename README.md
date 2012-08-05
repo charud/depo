@@ -13,7 +13,7 @@ Create a virtualhost for the ``beta branch`` of the ``example`` repository by ru
 ```bash
 $ depo create beta.example.org https://github.com/john-doe/example beta    
 ```
-A node server will now be running (using ``forever``) and the ``beta branch`` of ``example`` will be accessible from ``beta.example.org``. Make some modifications, push them to the remote branch, and update the server using:
+A node server will now be running (using ``forever``) and the ``beta branch`` will now be accessible from ``beta.example.org``. Make some modifications, push them to the remote branch, and update the server using:
 
 ```bash
 $ depo update beta.example.org    
