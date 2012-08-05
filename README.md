@@ -8,7 +8,7 @@ Installation
 Put the folder ``DepoProxy`` somewhere on your server, enter the folder and run ``npm install`` to install its dependencies (currently express). Make sure that your SSH user can access this folder. You also need to install ``forever`` from https://github.com/nodejitsu/forever/
 
 #### On your client
-Place depo.sh on a client from where you would like to manage the deployments:
+Put `depo.sh` on a client from where you would like to manage the deployments:
 
 ```bash
 $ wget https://raw.github.com/charlie-rudenstal/depo/master/depo.sh
