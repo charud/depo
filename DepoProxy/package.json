@@ -5,7 +5,7 @@
   "author": "Charlie Rudenstål <charlie4@gmail.com",
   "repository": {
     "type": "git",
-    "url": "git://github.com/charlie-rudenstal/Depo.git"
+    "url": "https://github.com/charlie-rudenstal/depo.git"
   },
   "main": "server.js",
   "scripts": {
