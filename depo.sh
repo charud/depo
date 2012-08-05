@@ -28,7 +28,7 @@ REMOTE_HOST=johndoe@example.org
 # Remote path proxy server
 # Will look for server.js (and create a server.js.tmp during the process)
 # Must end with /
-REMOTE_PATH_TO_PROXY_SERVER=/home/proxy/
+REMOTE_PATH_TO_PROXY_SERVER=/home/DepoProxy/
 
 # Remote path to public html
 # Will create folders for each site in here and look for server.js or other start point defined in package.json
