@@ -32,9 +32,9 @@ Usage
 -----
 - __depo create__ [nameOfVirtualHost] [repository] [optional branch]  
   Setup a new virtualhost on the server and checkout the specified repository using git
-	
-		$ depo create beta.example.org https://github.com/john-doe/example beta    
-
+```sh
+$ depo create beta.example.org https://github.com/john-doe/example beta    
+```
 - __depo update__ [nameOfVirtualHost]  
   Update the repository for the selected virtualhost on the server. (Reset to HEAD) 
   This will remove possible local modifications in the server repository, it is not a merge.
@@ -74,10 +74,12 @@ When adding new virtual hosts using ``depo create`` depo.sh will connect to your
 Virtual hosts that depo.sh generates looks something like this:
 
 ```js
-	app.use(express.vhost('beta.example.org', require('/home/cr/beta.example.org').app));
+app.use(express.vhost('beta.example.org', require('/home/cr/beta.example.org').app));
 ```
 
 You may modify server.js as you see fit, but be sure to leave no newlines at the end of the file.
 
 
-Author: Charlie Rudenstål <charlie4@gmail.com>
+Author  
+Charlie Rudenstål  
+<charlie4@gmail.com>
