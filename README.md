@@ -9,7 +9,7 @@ Forward port 80 to port 8080 by running: (DepoProxy is listening to port 8080)
 sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
 ```
 
-Create a virtualhost for a ``example`` repository (branch beta) by running:
+Create a virtualhost for a ``example`` repository (beta branch) by running:
 ```bash
 $ depo create beta.example.org https://github.com/john-doe/example beta    
 ```
