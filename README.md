@@ -33,9 +33,9 @@ Usage
 - __depo create__ [nameOfVirtualHost] [repository] [optional branch]  
   Setup a new virtualhost on the server and checkout the specified repository using git
 
-```bash
-$ depo create beta.example.org https://github.com/john-doe/example beta    
-```
+	```bash
+	$ depo create beta.example.org https://github.com/john-doe/example beta    
+	```
 
 - __depo update__ [nameOfVirtualHost]  
   Update the repository for the selected virtualhost on the server. (Reset to HEAD) 
