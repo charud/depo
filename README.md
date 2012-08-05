@@ -1,7 +1,7 @@
 Depo
 ====
 
-A shellscript for deploying node.js applications on a remote server using git and virtualhosts
+A shellscript for deploying node.js applications on a remote server using ssh, git and virtualhosts
 
 On your client(s) (depo.sh)
 --------------------------
@@ -11,19 +11,19 @@ depo.sh has the following options:
 
 - Create a new virtualhost setting and checkouts the repository using GIT
 	
-	$ depo create [nameOfVirtualHost] [repository] [optional branch]    
+		$ depo create [nameOfVirtualHost] [repository] [optional branch]    
 
 - Updates the git repository to HEAD (Will remove all local modifications, this is not a merge)
 	
-	$ depo update [nameOfVirtualHost]
+		$ depo update [nameOfVirtualHost]
 
 - Show a list of all virtual hosts, folders, associated git repository urls and current branches on the remote server. 
 
-	$ depo list
+		$ depo list
 
 - Restart the proxy server (using forever). Will start it if not already running.
 	
-	$ depo restart
+		$ depo restart
 
 Author: Charlie Rudenstål <charlie4@gmail.com>
 
